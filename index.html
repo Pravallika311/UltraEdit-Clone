@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download UltraEdit text editor for Windows</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=info,language,search" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    </style>
+    <style>
+        @media only screen and (max-width: 1143px) {
+            body {
+                overflow-x: hidden;
+            }
+
+            .content {
+                display: flex;
+                flex-direction: column;
+            }
+
+        }
+    </style>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24;
+        }
+
+        .language-icon {
+            margin: 31px 25px;
+            margin-right: 22px;
+            font-size: 16px;
+        }
+
+        .search-icon {
+            margin: 27px 36px;
+            margin-right: 43px;
+            font-size: 22px;
+            cursor: pointer;
+        }
+    </style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .head {
+            position: sticky;
+            top: 0;
+            background-color: white;
+        }
+
+        header {
+            height: 47px;
+            background-color: #ffd741;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header pre {
+            font-family: "Inter", sans-serif;
+        }
+
+        header a {
+            font-family: "Inter", sans-serif;
+            color: black;
+            margin-left: 24px;
+            cursor: pointer;
+        }
+
+        header a:hover {
+            color: rgb(188, 122, 0);
+        }
+
+        .info-icon {
+            font-size: 16px;
+            margin-top: 2px;
+            margin-left: -4px;
+        }
+
+        nav {
+            height: 79px;
+            width: 95vw;
+            border: 1px solid silver;
+            margin: 23px;
+            border-radius: 6px;
+            display: flex;
+            font-family: "Inter", sans-serif;
+            background-color: whitesmoke;
+        }
+
+        .circle {
+            width: 45px;
+            height: 41px;
+            border: 1.4px solid black;
+            border-radius: 21px;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffd741;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .tag1 {
+            margin-top: 24px;
+            margin-left: -11px;
+        }
+
+        .content {
+            padding: 23px;
+            margin-left: 132px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+
+        }
+
+        ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        ul li {
+            list-style: none;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .btn {
+            width: 115px;
+            height: 42px;
+            margin: 19px auto;
+            margin-right: -11px;
+            font-family: "Inter", sans-serif;
+            background-color: #ffd741;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #f5c001;
+            border: #f5c001;
+        }
+
+        .select {
+            height: 43px;
+            margin: 17px -23px;
+            margin-right: -21px;
+        }
+
+        select {
+            border: none;
+            font-family: "Inter", sans-serif;
+            font-size: 14px;
+            background-color: whitesmoke;
+            cursor: pointer;
+        }
+
+        .content-2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 11px;
+            font-family: 'Inter', sans-serif;
+            margin-top: 90px;
+        }
+
+        .content-2 h1 {
+            font-size: 48px;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+
+        .boxes {
+            width: 43px;
+            height: 43px;
+            display: grid;
+            grid-template-columns: repeat(2, 21.5px);
+            /* 43/2= 21.5*/
+            grid-template-rows: repeat(2, 21.5px);
+            row-gap: 1px;
+            column-gap: 1px;
+
+        }
+
+        .box {
+            width: 21px;
+            height: 21px;
+            background-color: black;
+
+        }
+
+        .content-3 {
+            display: flex;
+            justify-content: center;
+            margin-top: 52px;
+            height: 55px;
+            align-items: center;
+        }
+
+        .content-3 p {
+            height: 50px;
+            text-align: center;
+            width: 500px;
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            font-weight: 1px;
+            font-weight: 300;
+            color: #918b8b;
+        }
+
+        .btn2 {
+            display: flex;
+            width: 340px;
+            height: 55px;
+            justify-content: center;
+            align-items: center;
+            margin: 30px 460px;
+            gap: 5px;
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+            font-weight: 500;
+            background-color: #ffd741;
+            border: 2px solid #ffd741;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .btn2:hover {
+            background-color: #f5c001;
+            border: #f5c001;
+
+        }
+
+        .content-4 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .content-4 p {
+            color: whitesmoke;
+        }
+
+        .container {
+            width: 68vw;
+            margin: 22px 38px;
+            display: grid;
+            grid-template-columns: repeat(2, 50%);
+            grid-template-rows: repeat(5, 30vh);
+            row-gap: 27px;
+            column-gap: 27px;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .item {
+            width: 34vw;
+            height: 30vh;
+            border-radius: 12px;
+            background-color: #efefef;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+        }
+
+        .btn3 {
+            width: 165px;
+            height: 42px;
+            background-color: #ffd741;
+            border: 2px solid #ffd741;
+            border-radius: 10px;
+            font-weight: 600;
+            font-family: 'Inter', sans-serif;
+            cursor: pointer;
+        }
+
+        .btn3:hover {
+            background-color: #f5c001;
+            border: #f5c001;
+        }
+
+
+        .container2 {
+            display: flex;
+            gap: 120px;
+            font-family: 'Inter', sans-serif;
+            margin: 100px 192px;
+
+        }
+
+        .content-5 {
+            width: 31vw;
+            height: 233px;
+            /* border: 2px solid black; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .content-6 {
+            width: 31vw;
+            height: 235px;
+            border: 2px solid black;
+            background-color: #000000d6;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            font-size: 12px;
+        }
+
+        .content-6 input:focus {
+            outline: none;
+        }
+
+        .btn4 {
+            width: 90px;
+            height: 36px;
+            background-color: #ffd741;
+            border: 2px solid #ffd741;
+            border-radius: 7px;
+            cursor: pointer;
+        }
+
+        .btn4:hover {
+            background-color: #f5c001;
+            border: #f5c001;
+        }
+
+        .container3 {
+            /* height: 100vh; */
+            border: 2px solid #efefef;
+            font-family: 'Inter', sans-serif;
+            background-color: #efefef;
+
+        }
+
+        .content-7 {
+            display: flex;
+            gap: 95px;
+            margin: 50px 149px;
+        }
+
+        .box1 {
+            width: 405px;
+            height: 200px;
+            /* border: 1px solid black; */
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        .box2 {
+            width: 475px;
+            height: 169px;
+            /* border: 1px solid black; */
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        .content-8 {
+            width: 95vw;
+            height: 63vh;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin-top: 100px;
+            margin-left: 20px;
+            margin-bottom: 40px;
+            background-color: #2c2929;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .content-9 {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .box3 {
+            width: 401px;
+            height: 220px;
+            /* border: 2px solid white; */
+
+        }
+
+        .box4 {
+            display: flex;
+            width: 660px;
+            height: 300px;
+            /* border: 2px solid white; */
+            margin-top: 27px;
+            gap: 29px;
+        }
+
+        .column ul {
+            display: flex;
+            flex-direction: column;
+            color: rgb(215, 212, 212);
+            margin-top: 18px;
+            gap: 10px;
+        }
+
+
+        .column h4 {
+            color: white;
+            font-size: 18px;
+        }
+
+        .box5 {
+            margin-top: -40px;
+            margin-left: 36px;
+            color: white;
+            font-size: 13px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .box5 input {
+            width: 220px;
+            height: 40px;
+            border: 1px solid rgb(63, 61, 61);
+            border-radius: 4px;
+            background-color: rgb(63, 61, 61);
+            padding-left: 10px;
+            padding-right: 100px;
+        }
+
+        .box5 input:focus {
+            outline: none;
+        }
+
+        .btn5 {
+            width: 90px;
+            height: 35px;
+            margin-left: -97px;
+            background-color: #ffd741;
+            border: 1px solid #ffd741;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .btn5:hover {
+            background-color: #f5c001;
+            border: #f5c001;
+        }
+
+        .content-10 {
+            display: flex;
+            /* position: relative; */
+        }
+
+        .box6 {
+            color: rgb(215, 212, 212);
+            /* border: 1px solid white; */
+            position: absolute;
+            right: 40px;
+            bottom: 35px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <header>
+            <pre>UE Core & Enterprise Subscriptions: Get <b>10% Off</b> on your second year </pre>
+            <span class="material-symbols-outlined info-icon">info</span>
+            <a href="https://www.ultraedit.com/pricing"><b>Buy Now</b> →</a>
+        </header>
+        <nav>
+            <div class="circle">
+                <h2 style="font-style: italic;font-weight: 932;">UE</h2>
+            </div>
+            <div class="tag1">
+                <h3 style="font-size: 23px;">UltraEdit</h3>
+                <p style="font-size: 10px;margin-left: 17px;">By Embarcadero</p>
+            </div>
+            <div class="content">
+                <select style="width: 81px;">
+                    <option value="products">Products</option>
+                    <option value="ultraedit">UltraEdit</option>
+                    <option value="ultracompare">UltraCompare</option>
+                </select>
+                <ul>
+                    <li>Buy</li>
+                    <li>Renew</li>
+                </ul>
+                <select style="width: 78px;">
+                    <option value="Support">Support</option>
+                    <option value="TechnicalSupport">Technical Support</option>
+                    <option value="contactUs">Contact Us</option>
+                </select>
+                <select style="width: 60px;">
+                    <option value="learn">Learn</option>
+                    <option value="powertips">Power Tips</option>
+                    <option value="videotutorials">Video Tutorials</option>
+                </select>
+                <select style="width: 84px;">
+                    <option value="company">Company</option>
+                    <option value="About">About</option>
+                    <option value="Partners & distributors">Partners & Distributors</option>
+                </select>
+            </div>
+            <a href="https://www.ultraedit.com/downloads/ultraedit-download-thank-you/"><button
+                    class="btn">Download</button></a>
+            <span class="material-symbols-outlined language-icon">language</span>
+            <select class="select" style="width: 70px;">
+                <option value="english"> English</option>
+                <option value="japanese"> Japanese</option>
+            </select>
+            <span class="material-symbols-outlined search-icon">search</span>
+        </nav>
+    </div>
+
+    <div class="content-2">
+        <h1>Download UltraEdit for Windows</h1>
+        <div class="boxes">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </div>
+    <div class="content-3">
+        <p>
+            Download and try UltraEdit before you buy it! This download
+            includes the full Windows version of the text editor.
+        </p>
+    </div>
+    <a href="https://www.ultraedit.com/downloads/uex-download/" style="text-decoration: none;">
+        <button class="btn2">
+            <img src="apple.svg" alt="Apple icon" width="20px">
+            <img src="linux.svg" alt="Linux icon" width="20px">
+            <p>Download Mac or Linux version</p>
+            <img src="right-arrow.svg" alt="Right arrow" width="20px">
+        </button>
+    </a>
+
+    <div class="content-4">
+        <div class="circle">
+            <h2 style="font-style: italic;font-weight: 932;">UE</h2>
+        </div>
+        <h2 style="color: #777575;font-weight: 500;">Download UltraEdit</h2>
+        <p style="color: #777575;">v2026.0 (released 2026-06-09) | Latest changes</p>
+    </div>
+    <div class="container">
+        <div class="item item1">
+            <h3 style="font-weight: 500;">English</h3>
+            <h4 style="font-weight: 500;">Includes all Languages</h4>
+            <a href="ue_allinone.exe"><button class="btn3">Download 64-bit</button></a>
+            <div style="font-size: 11px;">SHA256</div>
+            <div style="font-size: 8px;">687E4D569E05292E91955A92B73813AFE563348D187FA331154280B2CA4695E7</div>
+        </div>
+        <div class="item item2">
+            <h3 style="font-weight: 500;">Duetsch</h3>
+            <h4 style="font-weight: 500;">German</h4>
+            <a
+                href="https://downloads.ultraedit.com/main/ue/win/ue_german_64.exe?_gl=1*15xtdfc*_gcl_au*MTc3MTM5NDQxMy4xNzgwODI1MzEz*_ga*NjEzODQxODQwLjE3ODA4MjUzMTM.*_ga_QNXHVTPWNS*czE3ODE0MjM0MzMkbzIzJGcxJHQxNzgxNDI0MTAwJGo2MCRsMCRoMTE2NzI4NTg1OA.."><button
+                    class="btn3">Download 64-bit</button></a>
+            <div style="font-size: 11px;">SHA256</div>
+            <div style="font-size: 8px;">DF3ABD7128D5F69C240E4C71578C870F450E30AA6307362CA4BDA151EB8856D9</div>
+        </div>
+        <div class="item item3">
+            <h3 style="font-weight: 500;">Italiano</h3>
+            <h4 style="font-weight: 500;">Italian</h4>
+            <a
+                href="https://downloads.ultraedit.com/main/ue/win/ue_italian_64.exe?_gl=1*19kl4ip*_gcl_au*MTc3MTM5NDQxMy4xNzgwODI1MzEz*_ga*NjEzODQxODQwLjE3ODA4MjUzMTM.*_ga_QNXHVTPWNS*czE3ODE0MjM0MzMkbzIzJGcxJHQxNzgxNDI0MzEzJGo2MCRsMCRoMTE2NzI4NTg1OA.."><button
+                    class="btn3">Download 64-bit</button></a>
+            <div style="font-size: 11px;">SHA256</div>
+            <div style="font-size: 8px;">E3B6C7C8F1AE149A16256D4DEF00252C9E10713E8052B7A595FBB9E3EC690260</div>
+        </div>
+        <div class="item item4">
+            <h3 style="font-weight: 500;">Espanol</h3>
+            <h4 style="font-weight: 500;">Spanish</h4>
+            <a
+                href="https://downloads.ultraedit.com/main/ue/win/ue_spanish_64.exe?_gl=1*19kl4ip*_gcl_au*MTc3MTM5NDQxMy4xNzgwODI1MzEz*_ga*NjEzODQxODQwLjE3ODA4MjUzMTM.*_ga_QNXHVTPWNS*czE3ODE0MjM0MzMkbzIzJGcxJHQxNzgxNDI0MzEzJGo2MCRsMCRoMTE2NzI4NTg1OA.."><button
+                    class="btn3">Download 64-bit</button></a>
+            <div style="font-size: 11px;">SHA256</div>
+            <div style="font-size: 8px;">A82DB539DE8B8AA9A1B76D0BF78A6E426355C3A437E67F7A25D9A34D68B05F36</div>
+        </div>
+        <div class="item item5">
+            <h3 style="font-weight: 500;">francais</h3>
+            <h4 style="font-weight: 500;">French</h4>
+            <a
+                href="https://downloads.ultraedit.com/main/ue/win/ue_french_64.exe?_gl=1*lvvfap*_gcl_au*MTc3MTM5NDQxMy4xNzgwODI1MzEz*_ga*NjEzODQxODQwLjE3ODA4MjUzMTM.*_ga_QNXHVTPWNS*czE3ODE0MjM0MzMkbzIzJGcxJHQxNzgxNDI0MzEzJGo2MCRsMCRoMTE2NzI4NTg1OA.."><button
+                    class="btn3">Download 64-bit</button></a>
+            <div style="font-size: 11px;">SHA256</div>
+            <div style="font-size: 8px;">5F3DEBA90BFBC2C5D1F93C551532636E2140F580DCFAB312917393AD5DAFB94C</div>
+        </div>
+        <div class="item item6">
+            <h3 style="font-weight: 500;">Portugues brasileiro</h3>
+            <h4 style="font-weight: 500;">Brazilian Portuguese</h4>
+            <a
+                href="https://downloads.ultraedit.com/main/ue/win/ue_portuguese_64.exe?_gl=1*12y19mu*_gcl_au*MTc3MTM5NDQxMy4xNzgwODI1MzEz*_ga*NjEzODQxODQwLjE3ODA4MjUzMTM.*_ga_QNXHVTPWNS*czE3ODE0MjM0MzMkbzIzJGcxJHQxNzgxNDI0MzEzJGo2MCRsMCRoMTE2NzI4NTg1OA.."><button
+                    class="btn3">Download 64-bit</button></a>
+            <div style="font-size: 11px;">SHA256</div>
+            <div style="font-size: 8px;">7C700CEA96ECBF60DECE830B202962A6AD990C15B124A30738E01B7CFB9D7D13</div>
+        </div>
+        <div class="item item7">
+            <h3 style="font-weight: 500;"></h3>
+            <h4 style="font-weight: 500;">Japanese</h4>
+            <a
+                href="https://downloads.ultraedit.com/main/ue/win/ue_japanese_64.exe?_gl=1*12y19mu*_gcl_au*MTc3MTM5NDQxMy4xNzgwODI1MzEz*_ga*NjEzODQxODQwLjE3ODA4MjUzMTM.*_ga_QNXHVTPWNS*czE3ODE0MjM0MzMkbzIzJGcxJHQxNzgxNDI0MzEzJGo2MCRsMCRoMTE2NzI4NTg1OA.."><button
+                    class="btn3">Download 64-bit</button></a>
+            <div style="font-size: 11px;">SHA256</div>
+            <div style="font-size: 8px;">6BB07C237A52A42558DBC1C69015E9973013B5ACD5F2697F24529890723693B9</div>
+        </div>
+        <div class="item item8">
+            <h3 style="font-weight: 500;"></h3>
+            <h4 style="font-weight: 500;">Korean</h4>
+            <a
+                href="https://downloads.ultraedit.com/main/ue/win/ue_korean_64.exe?_gl=1*sfxwd2*_gcl_au*MTc3MTM5NDQxMy4xNzgwODI1MzEz*_ga*NjEzODQxODQwLjE3ODA4MjUzMTM.*_ga_QNXHVTPWNS*czE3ODE0MjM0MzMkbzIzJGcxJHQxNzgxNDI0MzEzJGo2MCRsMCRoMTE2NzI4NTg1OA.."><button
+                    class="btn3">Download 64-bit</button></a>
+            <div style="font-size: 11px;">SHA256</div>
+            <div style="font-size: 8px;">18D10C60CB515AA363668775016F6065E4E7B9E5861769C7425222FD88AC14FD</div>
+        </div>
+        <div class="item item9">
+            <h3 style="font-weight: 500;"></h3>
+            <h4 style="font-weight: 500;">Chinese</h4>
+            <a
+                href="https://downloads.ultraedit.com/main/ue/win/ue_chinese_64.exe?_gl=1*sfxwd2*_gcl_au*MTc3MTM5NDQxMy4xNzgwODI1MzEz*_ga*NjEzODQxODQwLjE3ODA4MjUzMTM.*_ga_QNXHVTPWNS*czE3ODE0MjM0MzMkbzIzJGcxJHQxNzgxNDI0MzEzJGo2MCRsMCRoMTE2NzI4NTg1OA.."><button
+                    class="btn3">Download 64-bit</button></a>
+            <div style="font-size: 11px;">SHA256</div>
+            <div style="font-size: 8px;">B2A65F613BB3DF588C79FCBB0AC7C5EEA9E1F26240F810EA937BFDF1094B1799</div>
+        </div>
+        <div class="item item10">
+            <h3 style="font-weight: 500;"></h3>
+            <h4 style="font-weight: 500;">Traditional Chinese</h4>
+            <a
+                href="https://downloads.ultraedit.com/main/ue/win/ue_chinese_traditional_64.exe?_gl=1*1b84o1y*_gcl_au*MTc3MTM5NDQxMy4xNzgwODI1MzEz*_ga*NjEzODQxODQwLjE3ODA4MjUzMTM.*_ga_QNXHVTPWNS*czE3ODE0MjM0MzMkbzIzJGcxJHQxNzgxNDI0MzEzJGo2MCRsMCRoMTE2NzI4NTg1OA.."><button
+                    class="btn3">Download 64-bit</button></a>
+            <div style="font-size: 11px;">SHA256</div>
+            <div style="font-size: 8px;">AC20655EC8B8AF94C4F4B2A0A925D16984FF3F9E9C2DE792F980D16921E2D15B</div>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="content-5">
+            <h1>Join the UltraEdit newsletter</h1>
+            <p>Sign up for our newsletter and receive emails for the latest news, blogs, and special deals on UltraEdit.
+            </p>
+
+        </div>
+        <div class="content-6">
+            <h1 style="color: rgb(55, 180, 230); font-weight: 400;">Subscribe to our emails</h1>
+            <h2 style="color: white; font-weight: 400;">Enter email address</h2>
+            <div>
+                <input type="text" name="Username" style="width: 281px; height: 26px;">
+            </div>
+            <button class="btn4">SIGN UP</button>
+        </div>
+    </div>
+    <div class="container3">
+        <div class="content-7">
+            <div class="box1">
+                <h1>EXE or MSI?</h1>
+                <p>The EXE builds of our products are the preferred download for most of our users, running Windows 10
+                    and later.</p>
+                <p style="margin-top:-10px;">We make MSI builds available for bulk or silent deployments (command line,
+                    GPO, SCCM, etc.). <a href="/" style="text-decoration: none;">Get the UltraEdit MSI installer.</a>
+                </p>
+            </div>
+            <div class="box2">
+                <h1>Free trial period</h1>
+                <p>This application comes with a free, fully functional 7 day trial period. After the trial period
+                    expires, you must <a href="/" style="text-decoration: none;">purchase a license to continue using
+                        it.</a></p>
+            </div>
+        </div>
+        <div class="content-8">
+            <div class="content-9">
+                <div class="box3">
+                    <div class="circle"
+                        style="margin-left: 1px; height: 52px;width: 52px;border-radius: 41px;font-size: 19px;">
+                        <h2 style="font-style: italic;font-weight: 932;">UE</h2>
+                    </div>
+                    <h3 style="color: white;">UltraEdit</h3>
+                    <p style="color: white; margin-top: 18px;line-height: 1.6;font-size: 15px;">UltraEdit is the
+                        powerful
+                        text editor built for developers, data wranglers, and
+                        IT pros handling large files and complex tasks.</p>
+                </div>
+                <div class="box4">
+                    <div class="column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li>About Us</li>
+                            <li>Contact Us</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h4>Products</h4>
+                        <ul>
+                            <li>UltraEdit (Windows / Mac / Linux)</li>
+                            <li>UltraCompare</li>
+                            <li>UEStudio</li>
+                            <li>UltraFinder</li>
+                            <li>UltraFTP</li>
+                            <li>All Products</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h4>Support</h4>
+                        <ul>
+                            <li>Help Center</li>
+                            <li>Licensing & Activation</li>
+                            <li>File a Support Ticket</li>
+                            <li>Documentation</li>
+                            <li>Community Forums</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li>Privacy Policy</li>
+                            <li>Refund Policy</li>
+                            <li>License Agreement</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="content-10">
+                <div class="box5">
+                    <h3>Newsletter Signup</h3>
+                    <p>Stay updated on new features, tutorials, and exclusive offers.</p>
+                    <div class="subscribeBox">
+                        <input type="email" placeholder="email@email.com">
+                        <button class="btn5">Subscribe</button>
+
+                    </div>
+                </div>
+                <div class="box6">
+                    <p>&copy; Copyright 2026, All Rights Reserved</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
